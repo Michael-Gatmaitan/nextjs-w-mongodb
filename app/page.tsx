@@ -1,7 +1,7 @@
 import { InferGetServerSidePropsType } from "next";
 
 export default async function Home() {
-  const req = await fetch("https://nextjs-w-mongodb.vercel.app/api/blogs/", {
+  const req = await fetch("http://localhost:3000/api/blogs/", {
     cache: "no-cache",
   });
   const blogs: Blog[] = await req.json();
