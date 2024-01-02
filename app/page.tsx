@@ -1,7 +1,7 @@
 import { InferGetServerSidePropsType } from "next";
 
 export default async function Home() {
-  const req = await fetch("http://localhost:3000/api/blogs/", {
+  const req = await fetch(process.env.BASE_URL + "/api/blogs/", {
     cache: "no-cache",
   });
   const blogs: Blog[] = await req.json();
