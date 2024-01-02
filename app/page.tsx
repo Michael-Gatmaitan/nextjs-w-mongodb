@@ -6,7 +6,7 @@ export default async function Home() {
   });
   const blogs: Blog[] = await req.json();
 
-  // console.log(blogs);
+  console.log(blogs);
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
