@@ -1,7 +1,6 @@
 import clientPromise from "@/lib/mongodb";
-import { NextRequest, NextResponse } from "next/server";
 
-export async function GET(req: Request) {
+export async function GET() {
   // mongoose
   //   .connect(process.env.MONGODB_URI!)
   //   .then(() => console.log("MongoDB connected..."))
