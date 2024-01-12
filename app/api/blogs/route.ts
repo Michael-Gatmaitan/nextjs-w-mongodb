@@ -4,10 +4,7 @@ import clientPromise from "@/lib/mongodb";
 export const revalidate = 0;
 
 export async function GET() {
-  // mongoose
-  //   .connect(process.env.MONGODB_URI!)
-  //   .then(() => console.log("MongoDB connected..."))
-  //   .catch((err) => console.log(err));
+  // mongoose //   .connect(process.env.MONGODB_URI!) //   .then(() => console.log("MongoDB connected...")) //   .catch((err) => console.log(err));
   const client = await clientPromise;
 
   console.log(client);
